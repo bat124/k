@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <title>عنا</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Font+Name">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="school.html"><img src="images/LM.png" class="manga"></a>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="homeAR.html">الرئيسية</a></li>
+                        <li><a href="AboutAR.html">معلومات عنا</a></li>
+                        <li><a href="CourseAR.html">الدورات</a></li>
+                        <li><a href="BlogAR.html">المدونة</a></li>
+                        <li><a href="ContactAR.html">اتصل بنا</a></li>
+                        <li>اللغات
+                            <ul class="dropdown">
+                                <li><a href="About.html">الإنجليزية</a></li>
+                                <li><a href="AboutFR.html">الفرنسية</a></li>
+                                <li><a href="AboutAR.html">العربية</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>عنا</h1>
+        </section>
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>نحن واحدة من أفضل المدارس</h1>
+                    <p>نص باللغة العربية يصف المدرسة والخدمات المقدمة بها.</p>
+                    <a href="" class="red-btn">استكشف الآن</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/about.jpg">
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <h4>عنا</h4>
+            <p>نص باللغة العربية يصف المزيد عن المدرسة والخدمات المقدمة.</p>
+            <div class="icons">
+                <i href="facebook.com" class="fa fa-facebook"></i>
+                <i href="twitter.com" class="fa fa-twitter"></i>
+                <i href="instagram.com" class="fa fa-instagram"></i>
+                <i href="linkedin.com" class="fa fa-linkedin"></i>
+                <i href="youtube.com" class="fa fa-youtube"></i>
+            </div>
+            <p>صنع بـ <i class="fa fa-heart-o"></i> بواسطة Easy Tutorials</p>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

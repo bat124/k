@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <title>المدونة</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Font+Name">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="school.html"><img src="images/LM.png" class="manga"></a>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="homeAR.html">الرئيسية</a></li>
+                        <li><a href="AboutAR.html">حول</a></li>
+                        <li><a href="CourseAR.html">الدورات</a></li>
+                        <li><a href="BlogAR.html">المدونة</a></li>
+                        <li><a href="ContactAR.html">اتصل بنا</a></li>
+                        <li>اللغات
+                            <ul class="dropdown">
+                                <li><a href="Blog.html">الإنجليزية</a></li>
+                                <li><a href="BlogFR.html">الفرنسية</a></li>
+                                <li><a href="BlogAR.html">العربية</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>برامجنا وشهاداتنا عبر الإنترنت لعام 2023</h1>
+        </section>
+        <section class="blog-content">
+            <div class="blog-left">
+                <img src="images/certificate.jpg">
+                <h2>برامجنا وشهاداتنا عبر الإنترنت لعام 2023</h2>
+                <p>نص غير معني هنا يمكن استبداله بمحتوى المدونة الخاص بك.</p>
+                <br>
+                <p>نص غير معني هنا يمكن استبداله بمحتوى المدونة الخاص بك.</p>
+                <br>
+                <p>نص غير معني هنا يمكن استبداله بمحتوى المدونة الخاص بك.</p>
+                <br>
+                <p>نص غير معني هنا يمكن استبداله بمحتوى المدونة الخاص بك.</p>
+            </div>
+            <div class="comment-box">
+                <h3>اترك تعليقًا</h3>
+                <div class="reddam">
+                    <div><input type="text" placeholder="الاسم"></div>
+                    <div><input type="text" placeholder="البريد الإلكتروني"></div>
+                    <div><textarea rows="5" placeholder="تعليقك"></textarea></div>
+                    <div><button type="submit" class="hero-btn red-btn">نشر التعليق</button></div>
+                </div>
+            </div>
+        </section>
+        <section class="facilities">
+            <h1>مرافقنا</h1>
+            <p>نص غير معني هنا يمكن استبداله بوصف مرافق المدرسة.</p>
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/library.png">
+                    <h3>مكتبة الصفوف</h3>
+                    <p>نص غير معني هنا يمكن استبداله بوصف مكتبة الصفوف.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/cafeteria.png">
+                    <h3>صف الفن</h3>
+                    <p>نص غير معني هنا يمكن استبداله بوصف صف الفن.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/basketball.png">
+                    <h3>ملعب اللعب</h3>
+                    <p>نص غير معني هنا يمكن استبداله بوصف ملعب اللعب.</p>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <h4>حولنا</h4>
+            <p>نص غير معني هنا يمكن استبداله بمزيد من المعلومات عن المدرسة وخدماتها.</p>
+            <div class="icons">
+                <i href="facebook.com" class="fa fa-facebook"></i>
+                <i href="twitter.com" class="fa fa-twitter"></i>
+                <i href="instagram.com" class="fa fa-instagram"></i>
+                <i href="linkedin.com" class="fa fa-linkedin"></i>
+                <i href="youtube.com" class="fa fa-youtube"></i>
+            </div>
+            <p>صنع بـ <i class="fa fa-heart-o"></i> بواسطة Easy Tutorials</p>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

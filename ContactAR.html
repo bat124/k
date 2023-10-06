@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <title>اتصل بنا</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Font+Name">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <img src="images/LM.png" class="manga"></a>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="homeAR.html">الصفحة الرئيسية</a></li>
+                        <li><a href="AboutAR.html">عنا</a></li>
+                        <li><a href="CourseAR.html">الدورات</a></li>
+                        <li><a href="BlogAR.html">المدونة</a></li>
+                        <li><a href="ContactAR.html">اتصل بنا</a></li>
+                        <li>اللغات
+                            <ul class="dropdown">
+                                <li><a href="Contact.html">الإنجليزية</a></li>
+                                <li><a href="ContactFR.html">الفرنسية</a></li>
+                                <li><a href="ContactAR.html">العربية</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>اتصل بنا</h1>
+        </section>
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13345.63617718915!2d-7.5702836!3d33.2557821!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda63d44df0d4f55%3A0xa714d48f7e16cc1b!2sLe%20M%C3%A9diateur!5e0!3m2!1sfr!2sma!4v1696434862061!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="contact-us">
+            <div class="contact-col1">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>حي رقراقة 26100</h5>
+                        <p>شارع إدريس الهريزي، برشيد، المغرب</p>
+                    </span>
+
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+212 634659554</h5>
+                        <p>من الاثنين إلى الخميس، من الساعة 8 صباحًا حتى الساعة 5 مساءً<br>الجمعة، من الساعة 8 صباحًا حتى الساعة 1 ظهرًا</p>
+                    </span>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>gslemediateurschool.gmail.com</h5>
+                        <p>أرسل لنا استفسارك عبر البريد الإلكتروني</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="أدخل اسمك" required>
+                    <input type="email" name="email" placeholder="أدخل عنوان البريد الإلكتروني" required>
+                    <input type="text" name="subject" placeholder="أدخل فصل طفلك" required>
+                    <textarea rows="8" name="message" placeholder="الرسالة" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">إرسال الرسالة</button>
+                </form>
+            </div>
+        </section>
+        <section class="footer">
+            <h4>عنا</h4>
+            <p>لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبايسينغ إليت. أللام، مينوس تينيتور<br> ديسيرونت إكسبليكابو إلوم أوفيسييس إبسام ماكسيمي فولوبتاتيس أوت، سايبي نون. إن كونسيكتيتور إستي كوم إيسه إنسيديونت نيهيل مينيما لابور!</p>
+            <div class="icons">
+                <i href="facebook.com" class="fa fa-facebook"></i>
+                <i href="twitter.com" class="fa fa-twitter"></i>
+                <i href="instagram.com" class="fa fa-instagram"></i>
+                <i href="linkedin.com" class="fa fa-linkedin"></i>
+                <i href="youtube.com" class="fa fa-youtube"></i>
+            </div>
+            <p>صُنع بكل <i class="fa fa-heart-o"></i> من قِبل إيزي توتوريالز</p>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <title>Blog</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="school.html"><img src="images/LM.png" class="manga"></a>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="homeFR.html">ACCUEIL</a></li>
+                        <li><a href="AboutFR.html">À PROPOS</a></li>
+                        <li><a href="CourseFR.html">COURS</a></li>
+                        <li><a href="BlogFR.html">BLOGUE</a></li>
+                        <li><a href="ContactFR.html">CONTACT</a></li>
+                        <li>Langues
+                            <ul class="dropdown">
+                                <li><a href="Blog.html">ANGLAIS</a></li>
+                                <li><a href="BlogFR.html">FRANÇAIS</a></li>
+                                <li><a href="BlogAR.html">ARABE</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Nos Certificats & Programmes en Ligne pour 2023</h1>
+        </section>
+        <section class="blog-content">
+            <div class="blog-left">
+                <img src="images/certificate.jpg">
+                <h2>Nos Certificats & Programmes en Ligne pour 2023</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="comment-box">
+                <h3>Laisser un commentaire</h3>
+                <div class="reddam">
+                    <div><input type="text" placeholder="Entrez votre nom"></div>
+                    <div><input type="text" placeholder="Entrez votre adresse e-mail"></div>
+                    <div><textarea rows="5" placeholder="Votre commentaire"></textarea></div>
+                    <div><button type="submit" class="hero-btn red-btn">POSTER LE COMMENTAIRE</button></div>
+                </div>
+            </div>
+        </section>
+        <section class="facilities">
+            <h1>Nos Installations</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/library.png">
+                    <h3>Bibliothèque de classe</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/cafeteria.png">
+                    <h3>Classe d'art</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/basketball.png">
+                    <h3>Zone de jeux</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <h4>À Propos de Nous</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, minus tenetur <br> deserunt explicabo illum officiis ipsam maxime voluptates ut, saepe non. In consectetur iste cum esse incidunt nihil minima labore!</p>
+            <div class="icons">
+                <i href="facebook.com" class="fa fa-facebook"></i>
+                <i href="twitter.com" class="fa fa-twitter"></i>
+                <i href="instagram.com" class="fa fa-instagram"></i>
+                <i href="linkedin.com" class="fa fa-linkedin"></i>
+                <i href="youtube.com" class="fa fa-youtube"></i>
+            </div>
+            <p>Réalisé avec <i class="fa fa-heart-o"></i> par Easy Tutorials</p>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

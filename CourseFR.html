@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Nos Cours</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="school.html"><img src="images/LM.png" class="manga"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="homeFR.html">ACCUEIL</a></li>
+                    <li><a href="AboutFR.html">À PROPOS</a></li>
+                    <li><a href="CourseFR.html">COURS</a></li>
+                    <li><a href="BlogFR.html">BLOG</a></li>
+                    <li><a href="ContactFR.html">CONTACT</a></li>
+                    <li>Langues
+                        <ul class="dropdown">
+                            <li><a href="Course.html">ANGLAIS</a></li>
+                            <li><a href="CourseFR.html">FRANÇAIS</a></li>
+                            <li><a href="CourseAR.html">ARABE</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Nos Cours</h1>
+    </section>
+    <section class="course">
+        <h1>Les Cours Que Nous Offrons</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermédiaire</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus donec sit.</p>
+            </div>
+            <div class="course-col">
+                <h3>Master</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus donec sit.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus donec sit.</p>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <h4>À Propos de Nous</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, minus tenetur <br> deserunt explicabo illum officiis ipsam maxime voluptates ut, saepe non. In consectetur iste cum esse incidunt nihil minima labore!</p>
+        <div class="icons">
+            <i href="facebook.com" class="fa fa-facebook"></i>
+            <i href="twitter.com" class="fa fa-twitter"></i>
+            <i href="instagram.com" class="fa fa-instagram"></i>
+            <i href="linkedin.com" class="fa fa-linkedin"></i>
+            <i href="youtube.com" class="fa fa-youtube"></i>
+        </div>
+        <p>Fait avec <i class="fa fa-heart-o"></i> par Easy Tutorials</p>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

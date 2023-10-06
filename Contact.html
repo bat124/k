@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <title>Contact Us</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <img src="images/LM.png" class="manga"></a>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="Course.html">COURSE</a></li>
+                        <li><a href="Blog.html">BLOG</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                        <li>languages
+                            <ul class="dropdown">
+                                <li><a href="Contact.html">ENGLISH</a></li>
+                                <li><a href="ContactFR.html">FRANCE</a></li>
+                                <li><a href="ContactAR.html">ARABIC</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Contact Us</h1>
+        </section>
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13345.63617718915!2d-7.5702836!3d33.2557821!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda63d44df0d4f55%3A0xa714d48f7e16cc1b!2sLe%20M%C3%A9diateur!5e0!3m2!1sfr!2sma!4v1696434862061!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="contact-us">
+            <div class="contact-col1">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>hay ragraga 26100</h5>
+                        <p>Bd Idris Lherizi, Berrchid, Morocco</p>
+                    </span>
+
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+212 634659554</h5>
+                        <p>Monday to Thursday, 8AM to 5PM<br>Friday, 8AM to 1PM</p>
+                    </span>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>gslemediateurschool.gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your child class" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn"> Send Message</button>
+                </form>
+            </div>
+        </section>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, minus tenetur <br> deserunt explicabo illum officiis ipsam maxime voluptates ut, saepe non. In consectetur iste cum esse incidunt nihil minima labore!</p>
+            <div class="icons">
+                <i href="facebook.com" class="fa fa-facebook"></i>
+                <i href="twitter.com" class="fa fa-twitter"></i>
+                <i href="instagram.com" class="fa fa-instagram"></i>
+                <i href="linkedin.com" class="fa fa-linkedin"></i>
+                <i href="youtube.com" class="fa fa-youtube"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
